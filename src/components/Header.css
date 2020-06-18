@@ -1,0 +1,10 @@
+.header {
+    padding: 10px 20px;
+    background-color: rgb(40, 44, 52);
+    color: #61DAFB;
+}
+
+.header h2 {
+    color: #61DAFB;
+    margin: 0px;
+}
