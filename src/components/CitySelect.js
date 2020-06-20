@@ -3,7 +3,7 @@ import { Select } from 'antd';
 const { Option } = Select;
 
 const cities = [
-    "Mumbai", "Delhi", "Benguluru", "Chennai", "Srinagar", "Lucknow",
+    "Mumbai", "Delhi", "Bengaluru", "Chennai", "Srinagar", "Lucknow",
     "Gurugram", "Hyderabad", "Patna", "chandigarh", "Panaji", "Kolkata"
 ];
 const citiesOptions = [];
@@ -14,10 +14,10 @@ class CitySelect extends React.Component {
     constructor(props) {
         super(props);
         this.state = {}
-        this.cityChange = this.cityChange.bind(this)
+        this.handleCityChange = this.handleCityChange.bind(this)
     }
-    cityChange(event) {
-
+    handleCityChange(event) {
+        this.props.onCityChange(event);
     }
     render() {
         return (
@@ -25,7 +25,7 @@ class CitySelect extends React.Component {
                 mode="multiple"
                 placeholder="Select Cities"
                 defaultValue={cities.slice(0, 2)}
-                onChange={this.cityChange}
+                onChange={this.handleCityChange}
                 style={{ width: '100%' }}
             >
                 {citiesOptions}

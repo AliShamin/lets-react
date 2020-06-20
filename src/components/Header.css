@@ -1,10 +1,24 @@
 .header {
-    padding: 10px 20px;
-    background-color: rgb(40, 44, 52);
-    color: #61DAFB;
+  padding: 10px 20px;
+  background-color: rgb(40, 44, 52);
+  color: #ff4757;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .header h2 {
-    color: #61DAFB;
-    margin: 0px;
+  color: #61dafb;
+  margin: 0px;
+}
+
+.header_button {
+  cursor: pointer;
+  color: black;
+  border: 1em;
+  border-radius: 0.5em;
+}
+.header_button:hover {
+  background-color: #61dafb;
+  color: white;
 }

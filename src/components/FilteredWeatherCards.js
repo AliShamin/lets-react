@@ -1,6 +1,6 @@
 import React from 'react';
 import WeatherCard from './WeatherCard';
-import { Row, Col } from 'antd';
+import { Row } from 'antd';
 
 class FilteredWeatherCards extends React.Component {
   constructor(props) {
@@ -8,13 +8,11 @@ class FilteredWeatherCards extends React.Component {
     this.state = {}
   }
   render() {
-    return(
+    return (
       <Row>
         {
           this.props.selectedCities.map((city, index) =>
-            <Col key={index} span={6} style={{ padding: "20px" }}>
-              <WeatherCard key={city} city={city}></WeatherCard>
-            </Col>
+            <WeatherCard renderCondition={this.props.conditionalFilter} key={city} city={city}></WeatherCard>
           )
         }
       </Row>

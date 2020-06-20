@@ -5,10 +5,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### `npm start`
 =======
 ### `yarn start`
 >>>>>>> cf962c388ab772d2dd1d2b5bf6901cbc70eaee7a
+=======
+### `yarn start`
+>>>>>>> cb24fbaf070bb1c60264f02c47616f11b7a8ab03
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -17,19 +21,27 @@ The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### `npm test`
 =======
 ### `yarn test`
 >>>>>>> cf962c388ab772d2dd1d2b5bf6901cbc70eaee7a
+=======
+### `yarn test`
+>>>>>>> cb24fbaf070bb1c60264f02c47616f11b7a8ab03
 
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### `npm run build`
 =======
 ### `yarn build`
 >>>>>>> cf962c388ab772d2dd1d2b5bf6901cbc70eaee7a
+=======
+### `yarn build`
+>>>>>>> cb24fbaf070bb1c60264f02c47616f11b7a8ab03
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -40,10 +52,14 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### `npm run eject`
 =======
 ### `yarn eject`
 >>>>>>> cf962c388ab772d2dd1d2b5bf6901cbc70eaee7a
+=======
+### `yarn eject`
+>>>>>>> cb24fbaf070bb1c60264f02c47616f11b7a8ab03
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
@@ -80,9 +96,13 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ad
 This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### `npm run build` fails to minify
 =======
 ### `yarn build` fails to minify
 >>>>>>> cf962c388ab772d2dd1d2b5bf6901cbc70eaee7a
+=======
+### `yarn build` fails to minify
+>>>>>>> cb24fbaf070bb1c60264f02c47616f11b7a8ab03
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
