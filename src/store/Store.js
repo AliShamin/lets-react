@@ -1,28 +1,21 @@
 import { createStore } from "redux";
 
-// define reducer
-function todoApp(state = 0, action) {
-  switch (action.type) {
-    case "Dark":
-      return Object.assign({}, state, {
-        theme: {
-          "background-color": "rgb(40, 44, 52)",
-          color: "white",
-        },
-      });
-    case "Light":
-      return Object.assign({}, state, {
-        theme: { "background-color": "#dfe4ea" },
-      });
-    case "Default":
-      return Object.assign({}, state, {
-        theme: { "background-color": "#fad390" },
-      });
+// lets initialize the state
 
-    default:
-      return state;
+let initialState = {
+  theme: {},
+};
+
+// our reducer function :reducer it takes the action and the change the state
+function changeTheme(state = initialState, action) {
+  switch (action.type) {
+    case "ChangeTheme":
+      return Object.assign({}, state, {
+        theme: action.theme,
+      });
+      Default: return state;
   }
 }
 
-const store = createStore(todoApp);
+const store = createStore(changeTheme);
 export default store;

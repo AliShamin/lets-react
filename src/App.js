@@ -1,28 +1,24 @@
-import React from "react";
-import Header from "./components/Header";
-import TopFilters from "./components/TopFilters";
-import FilteredWeatherCards from "./components/FilteredWeatherCards";
-import "antd/dist/antd.css";
-import store from "../src/store/Store";
+import React from 'react';
+import Header from './components/Header';
+import TopFilters from './components/TopFilters';
+import FilteredWeatherCards from './components/FilteredWeatherCards';
+import 'antd/dist/antd.css';
 
 function App() {
-  const [selectedCities, setSelectedCities] = React.useState([
-    "Mumbai",
-    "Delhi",
-  ]);
-  const [conditionalFilter, setConditionalFilter] = React.useState();
+  const [selectedCities, setSelectedCities] = React.useState(["Mumbai", "Delhi"])
+  const [conditionalFilter, setConditionalFilter] = React.useState()
   let handleCityChange = (updatedSelectedCitiesArr) => {
     console.log("City Changed App", updatedSelectedCitiesArr);
-    setSelectedCities(updatedSelectedCitiesArr);
-  };
+    setSelectedCities(updatedSelectedCitiesArr)
+  }
 
   let handleConditionalFilterChange = (filter) => {
     console.log("Conditional Filter changed App:", filter);
     setConditionalFilter(filter);
-  };
+  }
   let handleClearFilters = () => {
     setConditionalFilter(null);
-  };
+  }
   return (
     <div>
       <Header />
@@ -31,10 +27,7 @@ function App() {
         onFilterChange={handleConditionalFilterChange}
         onFilterClear={handleClearFilters}
       />
-      <FilteredWeatherCards
-        conditionalFilter={conditionalFilter}
-        selectedCities={selectedCities}
-      />
+      <FilteredWeatherCards conditionalFilter={conditionalFilter} selectedCities={selectedCities} />
     </div>
   );
 }

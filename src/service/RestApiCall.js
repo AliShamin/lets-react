@@ -1,14 +1,12 @@
 import axios from "axios";
-import weatherApiKey from "../keys/weather-stack-api-key";
+import weatherApiKey from "../key/weatherApiKey";
 
-export function getCurrentTemperature(city) {
+function getCurrentTemperature(city) {
   return new Promise((resolve, reject) => {
-    let weatherApiEndpoint = `http://api.weatherstack.com/current?access_key=${weatherApiKey}`;
-    weatherApiEndpoint += `&query=${city}`;
+    let weatherEndpoint = `http://api.weatherstack.com/current?access_key=${weatherApiKey}&query=${city}`;
     axios
-      .get(weatherApiEndpoint)
+      .get(weatherEndpoint)
       .then((response) => {
-        // handle success
         if (response["data"] && response["data"]["current"]) {
           resolve({
             temperature: response["data"]["current"]["temperature"],
@@ -21,12 +19,10 @@ export function getCurrentTemperature(city) {
           throw new Error("No data received from api");
         }
       })
-      .catch((error) => {
-        // handle error
-        reject(error);
-      })
-      .finally(() => {
-        // always executed
+      .catch((err) => {
+        console.log(err);
       });
   });
 }
+
+export default getCurrentTemperature;
